@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe - RuvGames</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Tic-Tac-Toe</h1>
+
+    <p id="status">Connexion...</p>
+
+    <div id="password-container">
+        <input
+            type="password"
+            id="password"
+            placeholder="Mot de passe de la partie"
+        >
+
+        <button id="join-button">
+            Rejoindre
+        </button>
+    </div>
+
+    <div id="board" class="tic-tac-toe-board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+    </div>
+
+    <button id="leave-button">
+        Quitter
+    </button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/tictactoe.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Dépendances Node.js
+node_modules/
+
+# Fichier personnel
+/prochaine_phrase_a_dire_a_ChatGPT_pour_mon_jeu_via_le_compte_ProtonMail.txt
+
+# Identifiants confidentiels
+/confidentiel.sql
+.env
+.env.*
+!.env.example
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Musiques non autorisées à être redistribuées
+/public/musiques/musique1.mp3
+/public/musiques/musique2.mp3

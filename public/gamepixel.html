@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Pixel - RuvGames</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>🖼️ Game Pixel</h1>
+
+    <p id="status">
+        Connexion en cours...
+    </p>
+
+    <div id="game">
+
+        <img
+            id="gamepixel-image"
+            class="pixel-game"
+            src=""
+            alt="Image Game Pixel"
+        >
+
+        <br><br>
+
+        <input
+            type="text"
+            id="answer-input"
+            placeholder="Quel est ce jeu ?"
+            autocomplete="off"
+        >
+
+        <button id="submit-answer">
+            Valider
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/gamepixel.js"></script>
+
+</body>
+
+</html>

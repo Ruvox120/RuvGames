@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Bombe - RuvGames</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>La Bombe</h1>
+
+    <p id="status">Connexion...</p>
+
+    <div id="game">
+
+        <div id="timer">
+            30
+        </div>
+
+        <div id="syllable">
+            --
+        </div>
+
+        <input
+            type="text"
+            id="word-input"
+            placeholder="Entrez un mot"
+            autocomplete="off"
+        >
+
+        <button id="submit-word">
+            Valider
+        </button>
+
+        <p id="message"></p>
+
+        <h2>Mots utilisés</h2>
+
+        <ul id="word-history"></ul>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/bombe.js"></script>
+
+</body>
+</html>
